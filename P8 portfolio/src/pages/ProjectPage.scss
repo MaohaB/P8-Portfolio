@@ -1,0 +1,66 @@
+.project-page {
+    display: flex; /* Utilisez Flexbox pour la mise en page */
+    padding: 20px; /* Ajoutez un espacement autour de la page */
+    margin: 0 auto; /* Centrez la page horizontalement */
+    max-width: 1200px; /* Limitez la largeur maximale de la page */
+  
+    .content {
+      flex: 1; /* Prend toute l'espace disponible à gauche */
+      padding: 20px; /* Espacement interne pour le contenu */
+  
+      .title {
+        font-size: 2em; /* Taille du titre */
+        margin-bottom: 10px; /* Espacement en dessous du titre */
+        color: #333; /* Couleur du texte du titre */
+      }
+  
+      .description {
+        font-size: 1.2em; /* Taille de la description */
+        margin-bottom: 20px; /* Espacement en dessous de la description */
+        color: #555; /* Couleur du texte de la description */
+      }
+    }
+  
+    .infos {
+      flex: 0.5; /* Prend moins d'espace que le contenu à gauche */
+      padding: 20px; /* Espacement interne pour les infos */
+      
+      // Styles pour le cadre autour des langages et des liens
+      .info-container {
+        border: 2px solid black; /* Bordure noire autour des infos */
+        border-radius: 15px; /* Coins arrondis */
+        background-color: #f9f9f9; /* Couleur de fond pour le contraste */
+        padding: 15px; /* Espacement interne pour le cadre */
+  
+        .lang {
+          font-size: 1.5em; /* Taille de police pour le titre des langages */
+          margin-bottom: 10px; /* Espacement en dessous du titre */
+          color: #333;
+        }
+  
+        ul {
+          list-style-type: none; /* Supprimez les puces de la liste */
+          padding: 0; /* Supprimez le padding par défaut */
+  
+          li {
+            margin-bottom: 5px; /* Espacement entre les éléments de la liste */
+            color: #555;
+          }
+        }
+  
+        .links {
+          margin-top: 20px; /* Espacement au-dessus des liens */
+  
+          a {
+            text-decoration: none; /* Supprimez le soulignement des liens */
+            color: #007bff; /* Couleur des liens (vous pouvez changer cela) */
+  
+            &:hover {
+              text-decoration: underline; /* Soulignement au survol */
+            }
+          }
+        }
+      }
+    }
+  }
+  

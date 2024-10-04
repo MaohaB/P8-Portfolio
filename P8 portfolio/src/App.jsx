@@ -7,6 +7,9 @@ import Error from './components/Error'
 import Header from "./components/Header";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
+import ProjectCard from './components/ProjectCard';
+import ProjectPage from './pages/ProjectPage';
+
 import './App.css'
 
 function App() {
@@ -21,6 +24,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Error />} />
         <Route path="/error" element={<Error />} />
+        <Route path="/project/:projectId" element={<ProjectPage />} />
       </Routes>
 
       </div>

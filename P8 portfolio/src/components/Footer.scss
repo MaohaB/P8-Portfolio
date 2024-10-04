@@ -2,10 +2,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px 0;       
+    margin: 20px 0;       
     align-items: center;
     background-color: black;
-
+  //  min-height: calc(100vh - 62px);
+    position: relative;
+    left: 0;
+    bottom: 0;
 
 p {
     font-family: Montserrat;

@@ -7,7 +7,7 @@ function Error() {
           <div className="oups">Oups! La page que <br className="mobile"></br>vous demandez n'existe pas.</div>
           <div className="retour">
             <Link to="/" className="retour">
-            Essayez plutôt ici !
+            Essayez plutôt ici ! 
             </Link>
             </div>
       </div>

@@ -4,8 +4,8 @@ function HeaderBanner() {
     return (
         <div className="headerbanner">
             <div className="text">
-            <h1> MaohaB </h1>
-            <h2>Developper & Web designer</h2>
+            <h1> Maoha Brureau </h1>
+            <h2>Developpeur web</h2>
             </div>
         </div>
     )
