@@ -22,20 +22,90 @@ a {
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
-  max-width: 100%;
-  width: 30%;
-  height: 200px;
+  min-width: 200px;
+  width: 100%;
+  height: 400px;
   min-width: 350px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   background-color: #fff;
+  position: relative;
 }
+
+
+
+
+
+
+
+
+
+
+.cover-image-container {
+  position: relative;
+  width: 100%;
+  height: 200px; /* Ajustez selon vos besoins */
+  overflow: hidden;
+}
+
+.cover-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.hover-description {
+  position: absolute;
+  bottom: 15%;
+  left: 25%;
+  width: 50%;
+  height: 0; /* Initialement à 0 */
+  background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: height 0.3s ease;
+  overflow: hidden;
+}
+
+.cover-image-container:hover .hover-description {
+  height: 70%; /* Couvre 70% de l'image au survol */
+}
+
+.hover-description p {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .hover-description p {
+  opacity: 1;
+}
+
+
+
+
+
 
 .cover-image {
   width: 100%;
-  height: 250px;
-  object-fit: cover;
-  background-color: red;
+  height: 200px; /* Ajustez cette valeur selon vos besoins */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
+.cover-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 
 .project-info {
   padding: 15px;
@@ -54,6 +124,7 @@ a {
   color: #666;
   margin-bottom: 15px;
   line-height: 1.4;
+  display: none;
 }
 
 .footer-info {
@@ -107,7 +178,18 @@ a {
 
 
 @media (max-width: 768px) {
-  .ProjectCard {
-    flex: 0 1 100%; /* Sur les petits écrans les cartes prennent toute la largeur */
-  }
+//   .portfoliocards {
+//     width: 100%;
+//   }
+//   .project-card{
+//     width: 100%; /* Sur les petits écrans les cartes prennent toute la largeur */
+//   }
+
+.description {
+  display: flex;
+}
+.hover-description {
+  display: none; /* Cache complètement l'élément sur mobile */
+}
+
 }

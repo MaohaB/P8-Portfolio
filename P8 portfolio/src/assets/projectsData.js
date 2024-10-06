@@ -1,6 +1,7 @@
 export const projectsData = {
     projetA: {
         id: "projetA",
+        coverImage: '../../public/images/1680512368252_Kasa logo.png',
         title: "Projet A",
         smalldescription: "Description courte du Projet A",
         longdescription: "Description longue du Projet A",

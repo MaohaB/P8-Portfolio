@@ -14,7 +14,12 @@ const ProjectCard = ({ id }) => {
     <Link to={`/project/${id}`}>
     <div className="project-card">
       
-        {project.coverImage && <img src={project.coverImage} alt={project.title} />}
+    <div className="cover-image-container">
+          {project.coverImage && <img src={project.coverImage} alt={project.title} />}
+          <div className="hover-description">
+            <p>{project.smalldescription}</p>
+          </div>
+        </div>
         <div className="project-info">
         <h2 className="title">{project.title}</h2>
         <p className="description">{project.smalldescription}</p>
