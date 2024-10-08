@@ -1,48 +1,73 @@
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { projectsData } from '../assets/projectsData';
+import { FaArrowLeft } from 'react-icons/fa';
 import "./ProjectPage.scss";
+
+const SkillBar = ({ name, percentage, color }) => {
+  const [width, setWidth] = useState(0);
+
+  useEffect(() => {
+    setTimeout(() => setWidth(percentage), 200);
+  }, [percentage]);
+
+  return (
+    <li className="github-bar-item">
+      <span className="tech-name">{name}</span>
+      <div className="github-bar-container">
+        <div 
+          className="github-bar" 
+          style={{width: `${width}%`, backgroundColor: color}}
+        ></div>
+      </div>
+    </li>
+  );
+};
 
 const ProjectPage = () => {
     const { projectId } = useParams();
     const project = projectsData[projectId];
-        console.log("projectId:", projectId); // Log l'ID du projet
-        console.log("projectsData:", projectsData); // Log toutes les données des projets
-        console.log("project:", project); // Log le projet trouvé (ou undefined)
       
-        if (!project) {
-          console.log("Project not found, redirecting to error page");
-          return <Navigate to="/error" replace />;
-        }
+    if (!project) {
+      console.log("Project not found, redirecting to error page");
+      return <Navigate to="/error" replace />;
+    }
+
+    const paragraphs = project.longdescription.split('\n').map((para, index) => (
+      <p key={index} className='longdescription'>{para}</p>
+    ));
+
+    const colors = ['#61DAFB', '#F7DF1E', '#264de4', '#339933', '#663399'];
   
-  
-        return (
-            <div className="project-page">
-              <div className="content">
-                <h1 className='title'>{project.title}</h1>
-                <p className='description'>{project.longdescription}</p>
-                
-              </div>
-              
-              <div className="infos">
-                <div className="info-container">
-                <Link to="/portfolio">Retour à la liste des projets</Link>
-                  <h2 className='lang'>Langages utilisés :</h2>
-                  <ul>
-                    {project.languages.map((lang, index) => (
-                      <li key={index}>{lang}</li>
-                    ))}
-                  </ul>
-                  <div className='links'>
-                  <a href={project.githubLink} target="_blank" rel="noopener noreferrer">Voir sur GitHub</a>
-                    
-                  </div>
-                </div>
+    return (
+        <div className="project-page">
+          <div className="content">
+            <h1 className='title'>{project.title}</h1>
+            {paragraphs}
+          </div>
+          
+          <div className="infos">
+            <div className="info-container">
+              <Link to="/portfolio" className="back-link"><FaArrowLeft className="goback-arrow" />Retour à la liste des projets</Link>
+              <h2 className='lang'>Technologies utilisées :</h2> 
+              <ul className="github-bar-list">
+                {project.githubBar.map((tech, index) => (
+                  <SkillBar 
+                    key={index}
+                    name={tech.name}
+                    percentage={tech.percentage}
+                    color={colors[index % colors.length]}
+                  />
+                ))}
+              </ul>
+              <div className='links'>
+                <a href={project.githubLink} target="_blank" rel="noopener noreferrer">Voir sur GitHub</a>
               </div>
             </div>
-          );
-          
-  };
-  
-  export default ProjectPage;
+          </div>
+        </div>
+    );
+};
+
+export default ProjectPage;

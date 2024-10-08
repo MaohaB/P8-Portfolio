@@ -1,66 +1,111 @@
 .project-page {
-    display: flex; /* Utilisez Flexbox pour la mise en page */
-    padding: 20px; /* Ajoutez un espacement autour de la page */
-    margin: 0 auto; /* Centrez la page horizontalement */
-    max-width: 1200px; /* Limitez la largeur maximale de la page */
-  
-    .content {
-      flex: 1; /* Prend toute l'espace disponible à gauche */
-      padding: 20px; /* Espacement interne pour le contenu */
-  
-      .title {
-        font-size: 2em; /* Taille du titre */
-        margin-bottom: 10px; /* Espacement en dessous du titre */
-        color: #333; /* Couleur du texte du titre */
-      }
-  
-      .description {
-        font-size: 1.2em; /* Taille de la description */
-        margin-bottom: 20px; /* Espacement en dessous de la description */
-        color: #555; /* Couleur du texte de la description */
-      }
-    }
-  
-    .infos {
-      flex: 0.5; /* Prend moins d'espace que le contenu à gauche */
-      padding: 20px; /* Espacement interne pour les infos */
-      
-      // Styles pour le cadre autour des langages et des liens
-      .info-container {
-        border: 2px solid black; /* Bordure noire autour des infos */
-        border-radius: 15px; /* Coins arrondis */
-        background-color: #f9f9f9; /* Couleur de fond pour le contraste */
-        padding: 15px; /* Espacement interne pour le cadre */
-  
-        .lang {
-          font-size: 1.5em; /* Taille de police pour le titre des langages */
-          margin-bottom: 10px; /* Espacement en dessous du titre */
-          color: #333;
-        }
-  
-        ul {
-          list-style-type: none; /* Supprimez les puces de la liste */
-          padding: 0; /* Supprimez le padding par défaut */
-  
-          li {
-            margin-bottom: 5px; /* Espacement entre les éléments de la liste */
-            color: #555;
-          }
-        }
-  
-        .links {
-          margin-top: 20px; /* Espacement au-dessus des liens */
-  
-          a {
-            text-decoration: none; /* Supprimez le soulignement des liens */
-            color: #007bff; /* Couleur des liens (vous pouvez changer cela) */
-  
-            &:hover {
-              text-decoration: underline; /* Soulignement au survol */
-            }
-          }
-        }
-      }
-    }
-  }
-  
+  display: flex;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.title {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.longdescription {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.infos {
+  flex: 0.5;
+  padding: 20px;
+}
+
+.info-container {
+  border: 2px solid black;
+  border-radius: 15px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  min-height: 450px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.back-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: 25px;
+}
+
+.goback-arrow {
+  margin-right: 10px;
+  font-size: 45px;
+}
+
+.lang {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+ul {
+  list-style-type: none; 
+  padding: 0; 
+}
+
+li {
+  margin-bottom: 15px; 
+  color: #555; 
+}
+
+.links {
+  margin-top: 20px; 
+}
+
+.links a {
+  text-decoration: none; 
+  color: #007bff; 
+}
+
+.links a:hover {
+  text-decoration: underline; 
+}
+
+
+
+
+.github-bar-container {
+  display: flex; /* Utiliser flexbox pour l'alignement */
+  justify-content: flex-start; /* Aligner*/
+  width: calc(100% - 160px);
+  height: 15px;
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden; // Masquer le débordement
+}
+
+.github-bar {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  transition: width 0.5s ease-in-out;
+}
+
+.github-bar-item {
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  span {
+margin: 10px 0;
+font-size: 20px;
+}
+}

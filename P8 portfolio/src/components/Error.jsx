@@ -9,7 +9,6 @@ function Error() {
             <Link to="/" className="retour">
             Essayez plutôt ici ! 
             </Link>
-           <img src='../../public/images/1680512368252_Kasa logo.png' alt="Description" />
             </div>
       </div>
   )

@@ -7,8 +7,8 @@ import "./about.scss";
 const Home = () => {
     return (
         <div className="Home">
-            <HeaderBanner />
-            <Element  id="about">
+            <HeaderBanner id="top"/>
+            <Element  id="about-section">
             <Aboutcontainer />
             </Element >
         </div>

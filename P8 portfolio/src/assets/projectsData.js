@@ -1,11 +1,20 @@
+// Les languages sont sous forme:   JS,CSS,HTML,SCSS,REACT,NODEJS,EXPRESS,MONGODB,GITHUB
+
+
 export const projectsData = {
     projetA: {
         id: "projetA",
         coverImage: '../../public/images/1680512368252_Kasa logo.png',
         title: "Projet A",
         smalldescription: "Description courte du Projet A",
-        longdescription: "Description longue du Projet A",
-        languages: ["React", "Node.js"],
+        longdescription: "Description longue du Projet A.\n\nDeuxième paragraphe ici.\n\nTroisième paragraphe ici.",
+        languages: ["REACT", "NODEJS"],
+        githubBar: [
+          { name: 'React', percentage: 80 },
+          { name: 'Node.js', percentage: 70 },
+          { name: 'MongoDB', percentage: 60 },
+          // ... autres technologies
+        ],
         githubLink: "https://github.com/projetA"
       },
       projetB: {
@@ -14,7 +23,12 @@ export const projectsData = {
         smalldescription: "Description courte du Projet B",
         longdescription: "Description longue du Projet B",
         languages: ["HTML", "CSS"],
+        githubBar: [
+          { name: 'React', percentage: 20 },
+          { name: 'Node.js', percentage: 50 },
+          { name: 'MongoDB', percentage: 30 },
+        ],
         githubLink: "https://github.com/projetB"
       },
-    // Ajoutez d'autres projets ici
+    // Ajout d'autres projets ici
   };
