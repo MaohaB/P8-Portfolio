@@ -17,7 +17,7 @@ const Mentionslegales = () => {
             <ul>                
         <li>GitHub, Inc.</li>
         <li>88 Colin P Kelly Jr St, San Francisco, CA 94107, États-Unis</li>
-        <li>Numéro d'identification :EIN: 26-4252541</li>
+        <li>EIN: 26-4252541</li>
         </ul>
 
           

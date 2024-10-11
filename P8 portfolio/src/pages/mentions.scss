@@ -1,41 +1,12 @@
-.About {
-    align-items: center;
-    justify-content: center;
+.legal-notice {
     display: flex;
     width: 100%;
     flex-direction: column;
-.Aboutcontainer {
-    background-color: beige;
-    width: 80%;
-    padding: 10px;
-    border-radius: 20px;
     margin: 20px;
-
-    h3 {
-        text-align: center;
+    h2 {
+    text-align: start;
     }
     p {
     text-align: start;
     }
-}
-}
-
-
-.Home {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-.Aboutcontainer {
-    border-radius: 20px;
-    margin: 20px;
-
-    h3 {
-        text-align: center;
-    }
-    p {
-    text-align: start;
-    }
-}
 }
