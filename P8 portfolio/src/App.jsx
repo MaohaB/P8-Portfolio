@@ -9,6 +9,7 @@ import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import ProjectCard from './components/ProjectCard';
 import ProjectPage from './pages/ProjectPage';
+import Mentionslegales from './pages/Mentionslegales';
 
 import './App.css'
 
@@ -25,6 +26,7 @@ function App() {
         <Route path="*" element={<Error />} />
         <Route path="/error" element={<Error />} />
         <Route path="/project/:projectId" element={<ProjectPage />} />
+        <Route path="/mentionslegales" element={<Mentionslegales />} />
       </Routes>
 
       </div>

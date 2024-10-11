@@ -9,21 +9,28 @@ const SkillBar = ({ name, percentage, color }) => {
   const [width, setWidth] = useState(0);
 
   useEffect(() => {
-    setTimeout(() => setWidth(percentage), 200);
-  }, [percentage]);
+    const timer = setTimeout(() => setWidth(100), 200);
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
-    <li className="github-bar-item">
-      <span className="tech-name">{name}</span>
-      <div className="github-bar-container">
-        <div 
-          className="github-bar" 
-          style={{width: `${width}%`, backgroundColor: color}}
-        ></div>
+    <div 
+      className="skill-segment"
+      style={{ width: `${percentage}%` }}
+    >
+      <div 
+        className="skill-level" 
+        style={{ width: `${width}%`, backgroundColor: color }}
+      >
+        <div className="skill-info">
+          <span className="skill-name">{name}</span>
+          <span className="skill-percentage">{percentage}%</span>
+        </div>
       </div>
-    </li>
+    </div>
   );
 };
+
 
 const ProjectPage = () => {
     const { projectId } = useParams();
@@ -51,16 +58,17 @@ const ProjectPage = () => {
             <div className="info-container">
               <Link to="/portfolio" className="back-link"><FaArrowLeft className="goback-arrow" />Retour à la liste des projets</Link>
               <h2 className='lang'>Technologies utilisées :</h2> 
-              <ul className="github-bar-list">
-                {project.githubBar.map((tech, index) => (
-                  <SkillBar 
-                    key={index}
-                    name={tech.name}
-                    percentage={tech.percentage}
-                    color={colors[index % colors.length]}
-                  />
-                ))}
-              </ul>
+              <div className="github-bar">
+  {project.githubBar.map((tech, index) => (
+    <SkillBar 
+      key={index}
+      name={tech.name}
+      percentage={tech.percentage}
+      color={colors[index % colors.length]}
+    />
+  ))}
+</div>
+
               <div className='links'>
                 <a href={project.githubLink} target="_blank" rel="noopener noreferrer">Voir sur GitHub</a>
               </div>

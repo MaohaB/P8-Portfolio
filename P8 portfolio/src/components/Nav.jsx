@@ -11,6 +11,7 @@ function Nav() {
             <Link to="/#about-section" smooth={true} duration={500}>A Propos</Link>
             <NavLink to="/error" >erreur</NavLink>
             <NavLink to="/portfolio" >Portfolio</NavLink>
+            <NavLink to="/mentionslegales" >Mentions</NavLink>
             <Link to="/contact" smooth={true} duration={500}>Contact</Link>
         </nav>
     )
