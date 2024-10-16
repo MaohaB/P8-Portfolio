@@ -1,7 +1,7 @@
 import React from "react";
-import ProjectCard from "../components/ProjectCard"
-import "../components/ProjectCard.scss";
-import { projectsData } from '../assets/projectsData';
+import ProjectCard from "../../components/ProjectCard"
+import "../../components/Sass/ProjectCard.scss";
+import { projectsData } from '../../assets/projectsData';
 
 const Portfolio = () => {
   return (

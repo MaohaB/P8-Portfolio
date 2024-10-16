@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import './Header.scss';
+import './Sass/Header.scss';
 
 function Nav() {
     const [isOpen, setIsOpen] = useState(false);

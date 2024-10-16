@@ -1,5 +1,5 @@
 import Aboutcontainer from '../components/Aboutcontainer'
-import "./about.scss";
+import "../pages/HomePage/about.scss";
 
 const About = () => {
     return (

@@ -1,15 +1,15 @@
 import {BrowserRouter, Route, Routes } from 'react-router-dom';
-import Home from './pages/Home';
-import About from './pages/About/';
-import Portfolio from './pages/Portfolio/';
-import Contact from './pages/Contact/';
+import Home from './pages/HomePage/Home';
+import About from './pages/HomePage/About';
+import Portfolio from './pages/HomePage/Portfolio';
+import Contact from './pages/HomePage/Contact';
 import Error from './components/Error'
 import Header from "./components/Header";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import ProjectCard from './components/ProjectCard';
-import ProjectPage from './pages/ProjectPage';
-import Mentionslegales from './pages/Mentionslegales';
+import ProjectPage from './pages/Projects/ProjectPage';
+import Mentionslegales from './pages/LegalNotice/Mentionslegales';
 
 import './App.css'
 

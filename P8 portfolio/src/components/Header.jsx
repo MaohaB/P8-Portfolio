@@ -1,5 +1,5 @@
 import Nav from "./Nav";
-import './Header.scss'
+import './Sass/Header.scss'
 const Header = () => {
     return (
         <div className="header">

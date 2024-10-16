@@ -4,7 +4,7 @@
 export const projectsData = {
     projetA: {
         id: "projetA",
-        coverImage: '../../public/images/1680512368252_Kasa logo.png',
+        coverImage: '/images/1680512368252_Kasa logo.png',
         title: "Projet A",
         smalldescription: "Description courte du Projet A",
         longdescription: "Description longue du Projet A.\n\nDeuxième paragraphe ici.\n\nTroisième paragraphe ici.",
@@ -19,7 +19,7 @@ export const projectsData = {
       },
       projetB: {
         id: "projetB",
-        coverImage: '../../public/images/Capture102109-booki.png',
+        coverImage: '/images/Capture102109-booki.png',
         title: "Projet B",
         smalldescription: "Description courte du Projet B",
         longdescription: "Description longue du Projet B",
@@ -33,7 +33,7 @@ export const projectsData = {
       },
       projetC: {
         id: "projetC",
-        coverImage: '../../public/images/Capture101627-grimoire.png',        
+        coverImage: '/images/Capture101627-grimoire.png',        
         title: "Projet C",
         smalldescription: "Description courte du Projet C",
         longdescription: "Description longue du Projet C",

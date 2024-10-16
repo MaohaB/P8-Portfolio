@@ -1,6 +1,6 @@
 import React from "react";
-import HeaderBanner from "../components/HeaderBanner.jsx"
-import Aboutcontainer from "../components/Aboutcontainer.jsx";
+import HeaderBanner from "../../components/HeaderBanner.jsx"
+import Aboutcontainer from "../../components/Aboutcontainer.jsx";
 import { Link, Element  } from 'react-scroll';
 import "./about.scss";
 
