@@ -1,4 +1,4 @@
-.About {
+#about-section {
     align-items: center;
     justify-content: center;
     display: flex;
@@ -10,6 +10,7 @@
     padding: 10px;
     border-radius: 20px;
     margin: 20px;
+    margin-inline: 100px;
 
     h3 {
         text-align: center;
@@ -20,22 +21,28 @@
 }
 }
 
-
-.Home {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-.Aboutcontainer {
-    border-radius: 20px;
-    margin: 20px;
-
-    h3 {
-        text-align: center;
+@media (max-width: 576px) {
+    #about-section {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    .Aboutcontainer {
+        background-color: transparent;
+        width: 90%;
+        padding: 10px;
+        border-radius: 20px;
+        margin: 20px;
+        margin-inline: 10px;
+    
+        h3 {
+            text-align: center;
+        }
+        p {
+        text-align: start;
+        }
     }
-    p {
-    text-align: start;
     }
-}
-}
+  }
+ 
