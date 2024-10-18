@@ -13,7 +13,7 @@ const CVSection = () => {
           download="BRUREAU_Maoha_CV_Dev.pdf" 
           className="cvdownload-button"
         >
-          Télécharger mon CV <IoMdDownload className="cvdownload-icon" />
+          Consulter mon CV <IoMdDownload className="cvdownload-icon" />
         </a>
       </div>
     </div>

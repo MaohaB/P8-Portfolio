@@ -8,12 +8,12 @@
 }
 a {
   text-decoration: none; // Enlève le soulignement
-  color: inherit; // Utilise la couleur du texte parent
+  color: inherit; // couleur du texte parent
 
   &:hover {
     //text-decoration: underline; // Soulignement au survol
-    color: #007bff; // Changez la couleur au survol si désiré
-  }
+    color: #007bff; // Couleur au survol 
+      }
 }
 .project-card:hover {
   transform: scale(1.05); /* Légère augmentation de la taille au survol */
@@ -173,8 +173,8 @@ a {
 .portfoliocards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  width: 80%;
+  justify-content: space-evenly;
+  width: 90%;
   gap: 20px;
 }
 

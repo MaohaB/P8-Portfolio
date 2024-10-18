@@ -4,7 +4,7 @@ const Aboutcontainer = () => {
             <h3>About me</h3>
             <p>En tant qu'étudiante en développement web passionnée de design et d'art,
                 je combine ma créativité et mes compétences techniques pour concevoir 
-                des interfaces utilisateur originales et minimalistes. <br></br>
+                des interfaces utilisateur fonctionnelles et originales. <br></br>
                 Mon parcours à OpenClassrooms m'a permis de développer une expertise dans :</p>
                 <ul>
                     <li>La conception de sites web responsive</li>
@@ -12,7 +12,7 @@ const Aboutcontainer = () => {
                     <li>Intégration d'API</li>
                     <li>Gestion de projets</li>
                 </ul>
-            <p>Ma passion pour l'art et le design nourrit mon approche créative de la résolution de problèmes. </p>
+
             <p>Mon objectif est de combiner mes 
                 compétences en développement web 
                 avec ma sensibilité artistique pour 
@@ -22,6 +22,8 @@ const Aboutcontainer = () => {
                 qui me permettent d'explorer de nouvelles façons
                 de fusionner l'art, le design et la technologie.
             </p>
+            <p>Chaque projet est une occasion d'apprendre et d'explorer de nouvelles idées et de continuer
+                 à développer mes compétences dans le monde du design interactif.</p>
         </div>
     );
 } ;
