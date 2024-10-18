@@ -1,6 +1,6 @@
 .footer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     margin-top: 20px;       
     align-items: center;
@@ -8,15 +8,17 @@
   //  min-height: calc(100vh - 62px);
     position: static;
 
-p {
+.footertext {
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 500;
     line-height: 34.22px;
     color: white;
     display: flex;
+    flex-direction: row;
     padding: 0 20px;
-    justify-content: center;
+    justify-content: space-evenly;
+    width: 30%;
 }
 .mobile {
   display: none;

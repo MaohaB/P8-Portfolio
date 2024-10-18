@@ -45,5 +45,47 @@ export const projectsData = {
         ],
         githubLink: "https://github.com/projetC"
       },
+      projetC: {
+        id: "projetC",
+        coverImage: '/images/Capture101627-grimoire.png',        
+        title: "Projet C",
+        smalldescription: "Description courte du Projet C",
+        longdescription: "Description longue du Projet C",
+        languages: ["HTML", "CSS"],
+        githubBar: [
+          { name: 'React', percentage: 20 },
+          { name: 'Node.js', percentage: 50 },
+          { name: 'MongoDB', percentage: 30 },
+        ],
+        githubLink: "https://github.com/projetC"
+      },
+     booki: {
+        id: "booki",
+        coverImage: '/images/Capture101627-grimoire.png',        
+        title: "booki",
+        smalldescription: "Description courte du Projet C",
+        longdescription: "Description longue du Projet C",
+        languages: ["HTML", "CSS"],
+        githubBar: [
+          { name: 'React', percentage: 20 },
+          { name: 'Node.js', percentage: 50 },
+          { name: 'MongoDB', percentage: 30 },
+        ],
+        githubLink: "https://github.com/projetC"
+      },
+      projetC: {
+        id: "projetC",
+        coverImage: '/images/Capture101627-grimoire.png',        
+        title: "Projet C",
+        smalldescription: "Description courte du Projet C",
+        longdescription: "Description longue du Projet C",
+        languages: ["HTML", "CSS"],
+        githubBar: [
+          { name: 'React', percentage: 20 },
+          { name: 'Node.js', percentage: 50 },
+          { name: 'MongoDB', percentage: 30 },
+        ],
+        githubLink: "https://github.com/projetC"
+      },
     // Ajout d'autres projets ici
   };
