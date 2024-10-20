@@ -32,7 +32,7 @@ export const projectsData = {
   projet3: {
     id: "Sitearchitecte",
     coverImage: '/images/Capture092414-archi.png',        
-    title: "Page web pour un architecte",
+    title: "Page web pour une architecte",
     smalldescription: "Création d'une page web dynamique avec JavaScript ",
     longdescription: "Description longue du Projet C",
     languages: ["HTML", "CSS", "JS"],

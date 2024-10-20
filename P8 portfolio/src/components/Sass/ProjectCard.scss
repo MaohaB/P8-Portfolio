@@ -29,13 +29,8 @@ a {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   background-color: #fff;
   position: relative;
+  padding-top: 10px;
 }
-
-
-
-
-
-
 
 
 
@@ -43,7 +38,7 @@ a {
 .cover-image-container {
   position: relative;
   width: 100%;
-  height: 200px; /* Ajustez selon vos besoins */
+  height: 200px;
   overflow: hidden;
 }
 
@@ -84,10 +79,6 @@ a {
 .project-card:hover .hover-description p {
   opacity: 1;
 }
-
-
-
-
 
 
 .cover-image {
@@ -175,23 +166,21 @@ a {
   flex-wrap: wrap;
   justify-content: space-evenly;
   width: 90%;
-  gap: 20px;
+  gap: 50px;
 }
 
 
-@media (max-width: 768px) {
-//   .portfoliocards {
-//     width: 100%;
-//   }
-//   .project-card{
-//     width: 100%; /* Sur les petits écrans les cartes prennent toute la largeur */
-//   }
+@media (max-width: 576px) {
 
 .description {
   display: flex;
 }
 .hover-description {
   display: none; /* Cache complètement l'élément sur mobile */
+}
+.project-card {
+  width: 100%;
+  height: auto;
 }
 
 }

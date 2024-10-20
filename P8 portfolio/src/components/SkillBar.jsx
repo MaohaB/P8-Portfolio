@@ -1,7 +1,6 @@
-
 import React, { useState, useEffect } from 'react';
 
-const SkillBar = ({ name, percentage, color }) => {
+const SkillBar = ({ name, percentage, color, onHover, onLeave }) => {
   const [width, setWidth] = useState(0);
 
   useEffect(() => {
@@ -13,6 +12,8 @@ const SkillBar = ({ name, percentage, color }) => {
     <div 
       className="skill-segment"
       style={{ width: `${percentage}%` }}
+      onMouseEnter={() => onHover(name)}
+      onMouseLeave={onLeave}
     >
       <div 
         className="skill-level" 
@@ -26,6 +27,5 @@ const SkillBar = ({ name, percentage, color }) => {
     </div>
   );
 };
-
 
 export default SkillBar;
