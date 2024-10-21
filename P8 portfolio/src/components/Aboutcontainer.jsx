@@ -1,7 +1,6 @@
 const Aboutcontainer = () => {
     return (
         <div className="Aboutcontainer">
-            <h3>About me</h3>
             <p>En tant qu'étudiante en développement web passionnée de design et d'art,
                 je combine ma créativité et mes compétences techniques pour concevoir 
                 des interfaces utilisateur fonctionnelles et originales. <br></br>
