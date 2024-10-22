@@ -20,12 +20,16 @@ function Nav() {
                 </div>
             </button>
             <nav className={`dropdown-menu ${isOpen ? 'open' : ''}`}>
-                <Link to="/#top" smooth={true} duration={500}>Accueil</Link>
-                <Link to="/#about-section" smooth={true} duration={500}>A Propos</Link>
-                <NavLink to="/error">Erreur</NavLink>
-                <NavLink to="/portfolio">Portfolio</NavLink>
-                <NavLink to="/mentionslegales">Mentions</NavLink>
-                <Link to="/contact" smooth={true} duration={500}>Contact</Link>
+                <div className="nav-left">
+                    <Link to="/#top" smooth={true} duration={500}>Accueil</Link>
+                </div>
+                <div className="nav-right">
+                    <Link to="/#about-section" smooth={true} duration={500}>A Propos</Link>
+                    <NavLink to="/error">Erreur</NavLink>
+                    <NavLink to="/portfolio">Portfolio</NavLink>
+                    <NavLink to="/mentionslegales">Mentions</NavLink>
+                    <Link to="/contact" smooth={true} duration={500}>Contact</Link>
+                </div>
             </nav>
         </div>
     );
