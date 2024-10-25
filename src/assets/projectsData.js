@@ -4,7 +4,7 @@
 export const projectsData = {
   Projet2: {
     id: "booki",
-    coverImage: '/images/Capture102109-booki.png',        
+    coverImage: 'images/Capture102109-booki.png',        
     title: "Page d'accueil d'agence de voyage",
     smalldescription: "Créer la page d'accueil avec HTML & CSS ",
     longdescription: "Description longue du Projet C",
@@ -17,7 +17,7 @@ export const projectsData = {
   },
   projet4: {
     id: "Sitephotographe",
-    coverImage: '/images/Capture100819-photo.png',        
+    coverImage: 'images/Capture100819-photo.png',        
     title: "Optimiser un site de photographe",
     smalldescription: "Débugger et améliorer les performances d'un site de photographe professionnel ",
     longdescription: "Description longue du Projet C",
@@ -31,7 +31,7 @@ export const projectsData = {
   },
   projet3: {
     id: "Sitearchitecte",
-    coverImage: '/images/Capture092414-archi.png',        
+    coverImage: 'images/Capture092414-archi.png',        
     title: "Page web pour une architecte",
     smalldescription: "Création d'une page web dynamique avec JavaScript ",
     longdescription: "Description longue du Projet C",
@@ -46,7 +46,7 @@ export const projectsData = {
  
     projet5: {
         id: "Kasaimmobilier",
-        coverImage: '/images/Capture101012-kasa.png',
+        coverImage: 'images/Capture101012-kasa.png',
         title: "Application web de location immobilière",
         smalldescription: "Créer une application web avec React ",
         longdescription: "Description longue du Projet A.\n\nDeuxième paragraphe ici.\n\nTroisième paragraphe ici.",
@@ -62,7 +62,7 @@ export const projectsData = {
       },
       projet6: {
         id: "MonvieuxGrimoire",
-        coverImage: '/images/Capture101627-grimoire.png',        
+        coverImage: 'images/Capture101627-grimoire.png',        
         title: "Architecture d'un site de notation de livres ",
         smalldescription: "Développer le back-end d'une plateforme d'évaluation littéraire ",
         longdescription: "Description longue du Projet C",

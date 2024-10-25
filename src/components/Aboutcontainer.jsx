@@ -24,7 +24,7 @@ const Aboutcontainer = () => {
                    en développement avec ma sensibilité artistique pour créer des expériences web uniques et engageantes.</p>
         </div>
 
-<img src="../../public/images/p8-dessin2.png" alt="Personnage 2" className="p8-image image2" />
+<img src="images/p8-dessin2.png" alt="Personnage 2" className="p8-image image2" />
 </div>
         </div>
     );
