@@ -26,9 +26,9 @@ function Nav() {
                 <div className="nav-right">
                     <Link to="/#about-section" smooth={true} duration={500}>A Propos</Link>
                     <NavLink to="/error">Erreur</NavLink>
-                    <NavLink to="/portfolio">Portfolio</NavLink>
-                    <NavLink to="/mentionslegales">Mentions</NavLink>
-                    <Link to="/contact" smooth={true} duration={500}>Contact</Link>
+                    <Link to="/#portfolio-section" smooth={true} duration={500}>Portfolio</Link>
+                    {/*<NavLink to="/mentionslegales">Mentions</NavLink>*/}
+                    <Link to="/#contact" smooth={true} duration={500}>Contact</Link>
                 </div>
             </nav>
         </div>

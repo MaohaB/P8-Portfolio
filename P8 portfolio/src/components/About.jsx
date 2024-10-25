@@ -6,6 +6,7 @@ const About = () => {
     return (
         <div className="About">
             <Aboutcontainer />
+            
             <CVSection />
         </div>
     );

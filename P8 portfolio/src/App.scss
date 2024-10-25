@@ -1,4 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&family=Climate+Crisis&display=swap');
+
+
+$font-montserrat: 'Montserrat', sans-serif;
+$font-roboto: 'Roboto', sans-serif;
+$font-playfair: 'Playfair Display', serif;
+$font-bowlby: "Bowlby One", sans-serif;
+$font-crisis: "Climate Crisis", sans-serif;
+
+// variables de couleurs
+
+$eggshell-color: #edefdc; // Background gris
+$springbud-color: #afcf81; // Vert clair
+$purple-color: #837ab8; // Violet foncé
+$wisteria-color: #bbafd7; // Violet clair
+
+$lace-color: #fff6e3; // Blanc cassé
+$brass-color: #9c9943; // Kaki
+$marigold-color: #e6a035; // Jaune foncé
+$sienna-color: #eb6f56; // Rouge clair
+
+$lime-color: #afcf81; // vert clair
+$lemoncello-color: #f0dd77; // jaune clair
+$cove-color: #b9e3f4; // bleu clair
+$scuba-color: #293663; // bleu marine
+
+$isabelline-color: #f6f2e9; // blanc
+$pastel-color: #D5DABD; // vert clair
+$burlywood-color: #DEBE7F ; // Jaune
+$fusion-color: #7E7F51 ; // vert foncé
 
 html {
     width: 100%;

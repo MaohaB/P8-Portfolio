@@ -1,47 +1,87 @@
 #about-section {
-    .About {
-    align-items: center;
-    justify-content: space-evenly;
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-.Aboutcontainer {
-    background-color: beige;
-    width: 60%;
-    padding: 10px;
-    border-radius: 20px;
-    margin: 20px 40px;
+    .cv-image {
+        transition: all 0.3s ease; 
+    
+        &:hover {
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+            filter: brightness(1.1);
+            transform: scale(1.02);
+        }
+    }
 
-    h3 {
-        text-align: center;
+    .About {
+        align-items: start;
+        justify-content: space-evenly;
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+
+        .Aboutcontainer {
+            background-color: beige;
+            width: 60%;
+            padding: 10px;
+            border-radius: 20px;
+            margin: 20px 40px;
+
+            .about-content {
+                position: relative;
+                padding-bottom: 250px; // hauteur de l'image
+
+                .about-text {
+                    h3 {
+                        text-align: center;
+                    }
+
+                    p {
+                        text-align: start;
+                        margin-bottom: 30px;
+                        font-size: 20px;
+                    }
+                }
+
+                .p8-image {
+                    height: 250px; 
+                    position: absolute;
+                    bottom: 150px; 
+                    right: -50px; 
+                    transform: translateY(50%); 
+                }
+            }
+        }
     }
-    p {
-    text-align: start;
-    }
-}
-}
 }
 
 @media (max-width: 576px) {
     #about-section {
         .About {
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-    .Aboutcontainer {
-        background-color: transparent;
-        width: 90%;
-        padding: 10px;
-        border-radius: 20px;
-        h2, h3 {
-            text-align: center;
-        }
-        p {
-        text-align: start;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            .Aboutcontainer {
+                background-color: transparent;
+                width: 90%;
+
+                .about-content {
+                    padding-bottom: 0;
+
+                    h2, h3 {
+                        text-align: center;
+                    }
+
+                    p {
+                        text-align: start;
+                    }
+
+                    .p8-image {
+                        position: static;
+                        height: auto;
+                        max-width: 100%;
+                        transform: none;
+                        margin-top: 20px;
+                    }
+                }
+            }
         }
     }
-    }
-  }
 }

@@ -7,9 +7,9 @@ const CVSection = () => {
     <div className="cv-section">
       <h2>Mon CV</h2>
       <div className="cv-container">
-        <img src="/chemin/vers/votre/cv-image.jpg" alt="Aperçu du CV" className="cv-image" />
+        <img src="../../public/images/cvtest.jpg" alt="Aperçu du CV" className="cv-image" />
         <a 
-          href="/chemin/vers/votre/cv.pdf" 
+          href="cvtest.pdf" 
           download="BRUREAU_Maoha_CV_Dev.pdf" 
           className="cvdownload-button"
         >

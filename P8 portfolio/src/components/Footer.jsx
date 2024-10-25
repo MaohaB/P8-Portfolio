@@ -5,7 +5,7 @@ import './Sass/Footer.scss'
 
 const Footer = () => {
     return (
-        <div className="footer">
+        <div className="footer" id='contact'>
             <div className='footer-content'>
                 <div className='footer-left'>
                     <p>© 2024 </p>
@@ -16,7 +16,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='footer-links'>
-                <a href="mailto:email@example.com" aria-label="Email"><FaEnvelope /></a>
+                <a href="mailto:maohab.webdev@gmail.com" aria-label="Email"><FaEnvelope /></a>
                 <a href="https://github.com/MaohaB" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><FaGithub /></a>
             </div>
         </div>

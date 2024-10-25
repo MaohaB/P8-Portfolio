@@ -35,6 +35,8 @@ html, body {
       .footer-left, .footer-right {
           font-size: 14px;
           font-weight: 500;
+          display: flex;
+  gap: 20px;
       }
 
       .footer-right a {
