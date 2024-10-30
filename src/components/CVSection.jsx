@@ -5,11 +5,11 @@ import { IoMdDownload } from "react-icons/io";
 const CVSection = () => {
   return (
     <div className="cv-section">
-      <h2>Mon CV</h2>
+      <h3>Mon CV</h3>
       <div className="cv-container">
-        <img src="images/cvtest.jpg" alt="Aperçu du CV" className="cv-image" />
+        <img src="images/cv_webdev.jpg" alt="Aperçu du CV" className="cv-image" />
         <a 
-          href="cvtest.pdf" 
+          href="cv_webdev.pdf" 
           download="BRUREAU_Maoha_CV_Dev.pdf" 
           className="cvdownload-button"
         >

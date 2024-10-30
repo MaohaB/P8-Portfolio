@@ -12,10 +12,12 @@ const Home = () => {
             <HeaderBanner id="top"/>
             <Element  id="about-section">
             <h2>About me</h2>
+            <hr />
             <About />
             </Element>
             <Element  id="portfolio-section">
             <h2>Mes projets</h2>
+            <hr />
             <Portfolio />
             </Element >
         </div>

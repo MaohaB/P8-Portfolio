@@ -1,3 +1,5 @@
+@import '../../App.scss';
+
 .eror {
 display: flex;
 flex-direction: column;
@@ -8,7 +10,7 @@ margin-bottom: 150px;
 }
 
 .nb404 {
- color: #FF6060;
+ color: $lime-color;
  font-family: Montserrat;
 font-size: 288px;
 font-weight: 700;
@@ -16,7 +18,7 @@ line-height: 410.69px;
 align-content: space-around;
 }
 .oups {
-color: #FF6060;
+color: $lime-color;
 font-family: Montserrat;
 font-size: 28px;
 font-weight: 500;
@@ -37,7 +39,7 @@ color: black;
   }
 @media (max-width: 576px) {
     .nb404 {
-        color: #FF6060;
+        color: $lime-color;
         font-family: Montserrat;
        font-size: 158px;
        font-weight: 700;

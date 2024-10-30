@@ -1,3 +1,34 @@
+@import '../../App.scss';
+
 #about-section, #portfolio-section {
-    scroll-margin-top: 120px; /* Ajustez selon la hauteur de votre menu */
+    scroll-margin-top: 120px; /* Ajuster selon la hauteur du menu */
+    hr {
+      width: 10%;
+  margin-bottom: 50px;
+  color: #828282;
+    }
+    h2 {
+      font-family: $font-roboto;
+      display: flex;
+  justify-content: center;
+  font-size: 48px;
+  margin: 40px 10px;
+  color: #828282;
+    }
   }
+
+
+@media (max-width: 576px) {
+  #about-section, #portfolio-section {
+    hr {
+      width: 40%;
+  margin-bottom: 20px;
+    }
+    h2 {
+
+  font-size: 28px;
+  margin: 40px 10px;
+    }
+  }
+}
+ 

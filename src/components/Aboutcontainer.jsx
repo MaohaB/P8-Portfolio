@@ -17,14 +17,14 @@ const Aboutcontainer = () => {
                   dans le développement web. Je m'intéresse également au cinéma, à l'animation et à la modélisation 3D,
                    ce qui nourrit ma créativité et ma capacité à concevoir des interfaces utilisateur innovantes et 
                    esthétiques.</p>
-            <p>Je suis enthousiaste à l'idée d'appliquer mes connaissances et ma créativité dans un rôle stimulant
+            <p className="last-p">Je suis enthousiaste à l'idée d'appliquer mes connaissances et ma créativité dans un rôle stimulant
                  de développeuse web junior. Mon objectif est d'acquérir une expérience précieuse dans un environnement
                   professionnel, tout en continuant à élargir mes compétences techniques et créatives. Je suis 
                   particulièrement intéressée par les opportunités qui me permettront de combiner mes compétences
                    en développement avec ma sensibilité artistique pour créer des expériences web uniques et engageantes.</p>
         </div>
 
-<img src="images/p8-dessin2.png" alt="Personnage 2" className="p8-image image2" />
+<img src="images/p8-dessin3.png" alt="Personnage 2" className="p8-image image2" />
 </div>
         </div>
     );

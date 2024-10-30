@@ -7,6 +7,7 @@ const About = () => {
         <div className="About">
             <Aboutcontainer />
             
+            
             <CVSection />
         </div>
     );

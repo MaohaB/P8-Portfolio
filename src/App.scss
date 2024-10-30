@@ -33,6 +33,7 @@ $pastel-color: #D5DABD; // vert clair
 $burlywood-color: #DEBE7F ; // Jaune
 $fusion-color: #7E7F51 ; // vert foncé
 
+$cv-color: #ccdac3;
 html {
     width: 100%;
     max-width: 1750px;
@@ -40,6 +41,7 @@ html {
 }
 body {
     margin: 0;
+    background-color: $isabelline-color;
 }
 
 @media (max-width: 576px) {

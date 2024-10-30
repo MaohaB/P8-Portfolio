@@ -1,8 +1,11 @@
+@import '../../App.scss';
+
 .legal-notice {
     display: flex;
     width: 100%;
     flex-direction: column;
     margin: 20px;
+
     h2 {
     text-align: start;
     }

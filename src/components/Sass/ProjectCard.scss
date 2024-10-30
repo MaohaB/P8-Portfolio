@@ -1,3 +1,5 @@
+@import '../../App.scss';
+
 .Portfolio {
   display: flex;
   justify-content: center;
@@ -12,7 +14,7 @@ a {
 
   &:hover {
     //text-decoration: underline; // Soulignement au survol
-    color: #007bff; // Couleur au survol 
+    color: $purple-color; // Couleur au survol 
       }
 }
 .project-card:hover {

@@ -1,3 +1,5 @@
+@import '../../App.scss';
+
 #about-section {
     .cv-image {
         transition: all 0.3s ease; 
@@ -9,6 +11,15 @@
         }
     }
 
+    .p8-image {
+        height: 350px; 
+        position: absolute;
+        bottom: 0px; 
+        right: -120px; 
+        transform: translateY(50%); 
+        border-radius: 99% 1% 70% 30% / 0% 68% 32% 100% ;
+    }
+
     .About {
         align-items: start;
         justify-content: space-evenly;
@@ -17,7 +28,7 @@
         flex-direction: row;
 
         .Aboutcontainer {
-            background-color: beige;
+            background-color: $pastel-color;
             width: 60%;
             padding: 10px;
             border-radius: 20px;
@@ -25,7 +36,8 @@
 
             .about-content {
                 position: relative;
-                padding-bottom: 250px; // hauteur de l'image
+                padding-bottom: 50px; // hauteur de l'image
+                font-family: $font-roboto;
 
                 .about-text {
                     h3 {
@@ -36,16 +48,14 @@
                         text-align: start;
                         margin-bottom: 30px;
                         font-size: 20px;
+                    .last-p {
+                        width: 85%;
+
+                        }
                     }
                 }
 
-                .p8-image {
-                    height: 250px; 
-                    position: absolute;
-                    bottom: 150px; 
-                    right: -50px; 
-                    transform: translateY(50%); 
-                }
+               
             }
         }
     }

@@ -39,7 +39,7 @@ const ProjectCard = ({ id }) => {
           </div>
     </div>
     <div className="project-info">
-        <h2 className="title">{project.title}</h2>
+        <h3 className="title">{project.title}</h3>
         <p className="description">{project.smalldescription}</p>
         <div className="footer-info">
         <div className="languages">
