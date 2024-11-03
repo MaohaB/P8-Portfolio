@@ -11,7 +11,7 @@ const Home = () => {
         <div className="Home">
             <HeaderBanner id="top"/>
             <Element  id="about-section">
-            <h2>About me</h2>
+            <h2>À Propos de moi</h2>
             <hr />
             <About />
             </Element>

@@ -41,6 +41,7 @@
     z-index: 2;
     transition: all 0.3s ease;
     border-radius: 100% 0% 83% 17% / 0% 75% 25% 100%;
+    
   }
 
   .text {
@@ -52,6 +53,7 @@
     z-index: 2;
     font-family: $font-crisis;
     transition: all 0.3s ease;
+    text-shadow: 5px 5px #558abb82;
 
     h2 {
       text-align: center;

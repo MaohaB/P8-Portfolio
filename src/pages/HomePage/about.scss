@@ -18,6 +18,7 @@
         right: -120px; 
         transform: translateY(50%); 
         border-radius: 99% 1% 70% 30% / 0% 68% 32% 100% ;
+
     }
 
     .About {
@@ -26,6 +27,7 @@
         display: flex;
         width: 100%;
         flex-direction: row;
+        margin-bottom: 150px;
 
         .Aboutcontainer {
             background-color: $pastel-color;
@@ -67,6 +69,7 @@
             align-items: center;
             justify-content: center;
             flex-direction: column;
+            margin-bottom: 50px;
 
             .Aboutcontainer {
                 background-color: transparent;
@@ -74,6 +77,15 @@
 
                 .about-content {
                     padding-bottom: 0;
+                    .p8-image {
+                        position: static;
+                        height: auto;
+                        max-width: 100%;
+                        transform: none;
+                        margin: 20px;
+                        filter: drop-shadow(8px 8px 10px rgba(0,0,0,0.3));
+                    }
+                }
 
                     h2, h3 {
                         text-align: center;
@@ -83,14 +95,7 @@
                         text-align: start;
                     }
 
-                    .p8-image {
-                        position: static;
-                        height: auto;
-                        max-width: 100%;
-                        transform: none;
-                        margin-top: 20px;
-                    }
-                }
+                  
             }
         }
     }
