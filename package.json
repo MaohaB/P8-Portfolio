@@ -11,7 +11,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
 },
-"homepage": "https://<nom-utilisateur>.github.io/<nom-repo>",
+"homepage": "https://maohab.github.io/P8-Portfolio",
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
